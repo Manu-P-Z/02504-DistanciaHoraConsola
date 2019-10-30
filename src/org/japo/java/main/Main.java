@@ -77,10 +77,18 @@ public class Main {
             int diftiempoh = diftiempom / 60;
             diftiempom = diftiempoh % 60;
 
-            System.out.printf("%s 2d%/2d%/2d%n", "Hora actual ......:");
+            System.out.printf("%s %02d/%02d/%02d%n", "Hora actual ......:",
+                    hi, mi, si);
 
-        } finally {
+            System.out.printf("%s %02d/%02d/%02d%n", "Hora inicio ......:",
+                    hs, ms, ss);
+
+            System.out.printf("%s %d/%02d/%02d%n", "Tiempo de clase ..:",
+                    diftiempoh, diftiempom, diftiempos);
+
+        } catch (Exception e) {
         }
         System.out.println("Error");
+
     }
 }
