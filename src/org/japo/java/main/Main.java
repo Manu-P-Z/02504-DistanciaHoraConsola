@@ -44,7 +44,7 @@ public class Main {
 
             System.out.printf("%s%n", "Especificar Hora");
 
-             hi = SCN.nextInt();
+            hi = SCN.nextInt();
             SCN.nextLine();
 
             System.out.printf("%s%n", "Especificar Minutos");
@@ -58,29 +58,29 @@ public class Main {
             SCN.nextLine();
 
             System.out.println("----------");
-            
+
             int hs;
             int ms;
             int ss;
-            
+
             hs = cal.get(Calendar.HOUR_OF_DAY);
             ms = cal.get(Calendar.MINUTE);
             ss = cal.get(Calendar.SECOND);
-            
+
             int tiempoen = hi * 3600 + mi * 60 + si;
-            int tiemposal = hs * 3600 + ms * 60 + ss;       
-            
+            int tiemposal = hs * 3600 + ms * 60 + ss;
+
             int diftiempos = tiemposal - tiempoen;
-            
+
             int diftiempom = diftiempos / 60;
             diftiempos = diftiempom % 60;
             int diftiempoh = diftiempom / 60;
             diftiempom = diftiempoh % 60;
-            
+
             System.out.printf("%s 2d%/2d%/2d%n", "Hora actual ......:");
-                    
-            
+
         } finally {
-    } System.out.println("Error");
+        }
+        System.out.println("Error");
     }
 }
